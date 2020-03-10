@@ -1,0 +1,35 @@
+<div class="container pad-top">
+  <table class="table vacationtable">
+      <tr>
+          <td><h3>Details about a vacation in {{vacation.country}}</h3></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Country</td>
+          <td>{{vacation.country}}</td>
+      </tr>
+      <tr>
+          <td>Destination</td>
+          <td>{{vacation.destination}}</td>
+      </tr>
+      <tr>
+          <td>Transportation</td>
+          <td>{{vacation.transportation}}</td>
+      </tr>
+      <tr>
+          <td>Distance</td>
+          <td>{{vacation.distance}}</td>
+      </tr>
+       <tr>
+          <td>Departure Date - Return Date</td>
+          <td>{{vacation.departureDate}} - {{vacation.returnDate}}</td>
+      </tr>
+      <tr>
+          <td>Price in Euros</td>
+          <td>{{vacation.price}}</td>
+      </tr>
+  </table>
+  <div>
+      <a class="btn btn-primary" ui-sref="editVacation({id:vacation.id})">Edit</a>
+  </div>
+</div>

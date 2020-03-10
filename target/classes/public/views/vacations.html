@@ -1,0 +1,19 @@
+<div class="container pad-top">
+  <a ui-sref="newVacation" class="btn-primary btn-lg nodecoration">Add New Vacation</a>
+  <table class="table vacationtable">
+      <tr>
+          <td><h3>All Vacations</h3></td>
+          <td></td>
+      </tr>
+      <tr ng-repeat="vacation in vacations">
+          <td>{{vacation.country}}</td>
+          <td>{{vacation.departureDate}} - {{vacation.returnDate}}</td>
+          <td>{{vacation.destination}}</td>
+          <td>{{vacation.distance}}</td>
+          <td>
+              <a class="btn btn-primary" ui-sref="viewVacation({id:vacation.id})">View</a>
+              <a class="btn btn-danger"  ng-click="deleteVacation(vacation)">Delete</a>
+          </td>
+      </tr>
+  </table>
+</div>
